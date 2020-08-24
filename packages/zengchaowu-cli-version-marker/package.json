@@ -1,0 +1,11 @@
+{
+  "name": "zengchaowu-cli-version-marker",
+  "version": "1.0.0",
+  "description": "version marker for @zengchaowu/cli",
+  "author": "Chaowu Zeng",
+  "license": "MIT",
+  "main": "package.json",
+  "devDependencies": {
+    "@zengchaowu/cli": "^1.0.0"
+  }
+}
