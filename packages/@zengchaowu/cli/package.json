@@ -1,6 +1,6 @@
 {
   "name": "@zengchaowu/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My Command Line Tools For Full Stack Development",
   "bin": {
     "zengchaowu": "bin/zengchaowu.js"
