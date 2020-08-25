@@ -1,12 +1,8 @@
 #!/usr/bin/env node
 
-// Check node version before requiring/doing anything else
-// The user may be on a very old node version
-
 const { commander } = require('@zengchaowu/cli-shared-utils')
 
 const program = commander
-
 const package = require('../package')
 
 program
@@ -22,6 +18,5 @@ program
             program.outputHelp()
         }
     })
-
 
 program.parse(process.argv)
