@@ -3,6 +3,6 @@
   "useWorkspaces": true,
   "version": "1.0.1",
   "packages": [
-    "packages/*"
+    "packages/@zengchaowu/cli*"
   ]
 }
