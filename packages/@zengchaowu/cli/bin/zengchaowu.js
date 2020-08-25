@@ -3,7 +3,7 @@
 // Check node version before requiring/doing anything else
 // The user may be on a very old node version
 
-const { chalk, leven, semver, commander } = require('@zengchaowu/cli-shared-utils')
+const { commander } = require('@zengchaowu/cli-shared-utils')
 
 const program = commander
 
