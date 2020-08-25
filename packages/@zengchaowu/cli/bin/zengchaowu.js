@@ -7,8 +7,10 @@ const { chalk, leven, semver, commander } = require('@zengchaowu/cli-shared-util
 
 const program = commander
 
+const package = require('../package')
+
 program
-    .version(`@zengchaowu/cli ${require('../package').version}`)
+    .version(`${package.name} ${package.version}`)
     .usage('<command> [options]')
 
 program
