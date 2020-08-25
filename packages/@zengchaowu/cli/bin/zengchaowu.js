@@ -14,9 +14,10 @@ program
     .usage('<platform> [ios, android, nuxt, egg]')
 
 program
-    .action((cmd) => {
-        name = 'ios'
-        eval(`require('../lib/${name}')`)
+    .action(() => {
+        name = process.argv.slice(2, 3)
+        console.log(name)
+        // eval(`require('../lib/${name}')`)
     })
 
 
