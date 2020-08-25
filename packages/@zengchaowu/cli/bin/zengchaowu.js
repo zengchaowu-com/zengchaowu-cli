@@ -14,28 +14,10 @@ program
     .usage('<platform> [ios, android, nuxt, egg]')
 
 program
-    .command('create <project-name>')
-    .option('-p, --platform', 'target platform')
-    .option('-t, --type', 'project type')
-    .action((name, cmd) => {
-        const options = cleanArgs(cmd)
+    .action((cmd) => {
+        console.log(cmd)
         require('../lib/create')(name, options)
     })
 
 
 program.parse(process.argv)
-
-function camelize(str) {
-    return str.replace(/-(\w)/g, (_, c) => c ? c.toUpperCase() : '')
-}
-
-function cleanArgs(cmd) {
-    const args = {}
-    cmd.options.forEach(o => {
-        const key = camelize(o.long.replace(/^--/, ''))
-        if (typeof cmd[key] !== 'function' && typeof cmd[key] !== 'undefined') {
-            args[key] = cmd[key]
-        }
-    })
-    return args
-}
