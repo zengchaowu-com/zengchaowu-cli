@@ -25,7 +25,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@zengchaowu/cli-shared-utils": "^1.0.2"
+    "@zengchaowu/cli-shared-utils": "^1.0.2",
+    "leven": "^3.1.0"
   },
   "engines": {
     "node": ">=8.9"
