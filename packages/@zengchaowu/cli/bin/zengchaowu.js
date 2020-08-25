@@ -17,7 +17,7 @@ program
     .action(() => {
         file = process.argv.slice(2, 3)
         if (file.length > 0) {
-            eval(`require('../lib/${file}')`)
+            eval(`require('./${file}')`)
         } else {
             program.outputHelp()
         }
