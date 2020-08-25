@@ -15,9 +15,10 @@ program
 
 program
     .action(() => {
-        name = process.argv.slice(2, 3)
-        console.log(name)
-        // eval(`require('../lib/${name}')`)
+        tools = process.argv.slice(2, 3)
+        if (tools.length > 0) {
+            eval(`require('../lib/${tools}')`)
+        }
     })
 
 
