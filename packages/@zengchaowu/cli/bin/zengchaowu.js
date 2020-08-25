@@ -15,8 +15,8 @@ program
 
 program
     .action((cmd) => {
-        console.log(cmd)
-        require('../lib/create')(name, options)
+        name = 'ios'
+        eval(`require('../lib/${name}')`)
     })
 
 
