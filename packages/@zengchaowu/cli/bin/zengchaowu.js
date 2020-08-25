@@ -18,6 +18,8 @@ program
         file = process.argv.slice(2, 3)
         if (file.length > 0) {
             eval(`require('../lib/${file}')`)
+        } else {
+            program.outputHelp()
         }
     })
 
