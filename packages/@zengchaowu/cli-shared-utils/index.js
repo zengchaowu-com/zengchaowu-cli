@@ -6,3 +6,5 @@ exports.leven = require('leven')
 exports.semver = require('semver')
 // 命令行参数解析工具
 exports.commander = require('commander')
+// 命令行交互工具
+exports.inquirer = require('inquirer')
