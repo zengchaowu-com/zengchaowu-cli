@@ -1,6 +1,6 @@
 {
   "name": "@zengchaowu/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My Command Line Tools For Full Stack Development",
   "bin": {
     "zengchaowu": "bin/zengchaowu.js"
@@ -25,7 +25,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@zengchaowu/cli-shared-utils": "^1.0.0"
+    "@zengchaowu/cli-shared-utils": "^1.0.2"
   },
   "engines": {
     "node": ">=8.9"

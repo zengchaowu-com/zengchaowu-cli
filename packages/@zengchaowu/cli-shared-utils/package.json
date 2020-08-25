@@ -1,6 +1,6 @@
 {
   "name": "@zengchaowu/cli-shared-utils",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Shared utilities for zengchaowu-cli packages",
   "main": "index.js",
   "repository": {
