@@ -15,9 +15,9 @@ program
 
 program
     .action(() => {
-        tools = process.argv.slice(2, 3)
-        if (tools.length > 0) {
-            eval(`require('../lib/${tools}')`)
+        file = process.argv.slice(2, 3)
+        if (file.length > 0) {
+            eval(`require('../lib/${file}')`)
         }
     })
 
