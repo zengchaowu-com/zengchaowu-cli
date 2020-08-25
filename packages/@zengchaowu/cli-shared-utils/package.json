@@ -21,6 +21,7 @@
   "homepage": "https://github.com/zengchaowu-com/zengchaowu-cli/tree/dev/packages/@vue/cli-shared-utils#readme",
   "dependencies": {
     "chalk": "^4.1.0",
+    "commander": "^6.0.0",
     "leven": "^3.1.0",
     "semver": "^7.3.2"
   },

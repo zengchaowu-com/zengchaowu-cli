@@ -3,7 +3,6 @@
 // Check node version before requiring/doing anything else
 // The user may be on a very old node version
 
-const { chalk, leven } = require('@zengchaowu/cli-shared-utils')
-const requiredVersion = require('../package.json').engines.node
+const { chalk, leven, semver } = require('@zengchaowu/cli-shared-utils')
 
-console.log(chalk.red(requiredVersion))
+const program = require('commander')

@@ -4,3 +4,5 @@ exports.chalk = require('chalk')
 exports.leven = require('leven')
 // 模块版本号校验工具
 exports.semver = require('semver')
+// 命令行参数解析工具
+exports.commander = require('commander')
