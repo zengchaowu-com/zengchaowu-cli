@@ -11,7 +11,7 @@ const package = require('../package')
 
 program
     .version(`${package.name} ${package.version}`)
-    .usage('<command> [options]')
+    .usage('<platform> [ios, android, nuxt, egg]')
 
 program
     .command('create <project-name>')
