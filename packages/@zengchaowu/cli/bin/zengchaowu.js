@@ -18,19 +18,24 @@ program
     .option('-p, --platform', 'target platform')
     .option('-t, --type', 'project type')
     .action((name, cmd) => {
-        console.log(name)
-        console.log(cmd)
-        // const options = cleanArgs(cmd)
-
-        // if (minimist(process.argv.slice(3))._.length > 1) {
-        //     console.log(chalk.yellow('\n Info: You provided more than one argument. The first one will be used as the app\'s name, the rest are ignored.'))
-        // }
-        // // --git makes commander to default git to true
-        // if (process.argv.includes('-g') || process.argv.includes('--git')) {
-        //     options.forceGit = true
-        // }
-        // require('../lib/create')(name, options)
+        const options = cleanArgs(cmd)
+        require('../lib/create')(name, options)
     })
 
 
 program.parse(process.argv)
+
+function camelize(str) {
+    return str.replace(/-(\w)/g, (_, c) => c ? c.toUpperCase() : '')
+}
+
+function cleanArgs(cmd) {
+    const args = {}
+    cmd.options.forEach(o => {
+        const key = camelize(o.long.replace(/^--/, ''))
+        if (typeof cmd[key] !== 'function' && typeof cmd[key] !== 'undefined') {
+            args[key] = cmd[key]
+        }
+    })
+    return args
+}
