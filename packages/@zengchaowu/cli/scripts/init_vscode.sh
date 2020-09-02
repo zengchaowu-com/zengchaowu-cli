@@ -10,3 +10,7 @@ echo 'export PATH="/Users/chaowuzeng/Library/Python/3.7/bin"' >> .zshrc
 
 ## Ruby
 @id:rebornix.ruby
+@id:castwide.solargraph
+
+## comment
+@id:aaron-bond.better-comments

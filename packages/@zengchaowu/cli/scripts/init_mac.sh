@@ -31,6 +31,9 @@ function install_homebrew()
 brew install tree wget fastlane cocoapods
 brew cask install google-chrome lantern appcode visual-studio-code
 
+# Ruby Gems
+sudo gem install solargraph cocoapods fastlane
+
 # 安装Flutter
 function install_flutter()
 {
