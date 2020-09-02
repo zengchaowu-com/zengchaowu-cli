@@ -28,9 +28,8 @@ function install_homebrew()
 }
 
 # 安装常用软件
-brew install wget
-brew install fastlane
-brew install cocoapods
+brew install tree wget fastlane cocoapods
+brew cask install google-chrome lantern appcode visual-studio-code
 
 # 安装Flutter
 function install_flutter()
