@@ -20,6 +20,14 @@ function modify_githubusercontent_dns()
     sudo chmod 755 /etc/hosts
 }
 
+# 修改api.github.com的DNS
+function modify_githubusercontent_dns()
+{
+    sudo chmod 777 /etc/hosts
+    sudo echo 13.250.94.254 api.github.com >> /etc/hosts
+    sudo chmod 755 /etc/hosts
+}
+
 # 安装Homebrew
 function install_homebrew()
 {
